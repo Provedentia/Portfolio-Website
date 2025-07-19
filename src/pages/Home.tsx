@@ -1,8 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Code, Coffee, Rocket, Linkedin } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="min-h-screen pt-20">
       {/* Hero Section */}
@@ -10,15 +13,19 @@ const Home = () => {
         <div className="container mx-auto text-center">
           <div className="animate-float">
             <h1 className="text-5xl md:text-7xl font-bold mb-6">
-              Hello, I'm <span className="text-gradient">Your Name</span>
+              Hello, I'm Suhaib Aden
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-              Full-Stack Developer crafting digital experiences with modern technologies
+              I'm a Sophmore studying Computer Science and Math at Northwestern University. I'm interested in AI, Machine Learning, and Software Engineering and am currently looking for a summer 2026 internship.
             </p>
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-            <Button size="lg" className="bg-hero-gradient animate-glow">
+            <Button 
+              size="lg" 
+              className="bg-hero-gradient animate-glow"
+              onClick={() => navigate('/projects')}
+            >
               <Code className="mr-2" size={20} />
               View My Work
             </Button>
@@ -28,7 +35,7 @@ const Home = () => {
               asChild
               className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
             >
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/suhaibaden/" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="mr-2" size={20} />
                 Connect on LinkedIn
               </a>
@@ -74,18 +81,17 @@ const Home = () => {
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h3 className="text-2xl font-semibold mb-6">Passionate Developer</h3>
+                <h3 className="text-2xl font-semibold mb-6">Why I'm a Software Engineer</h3>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
-                  I'm a dedicated full-stack developer with a passion for creating 
-                  innovative solutions and beautiful user experiences. With expertise 
-                  in modern web technologies, I bring ideas to life through clean, 
-                  efficient code.
+                I’ve been drawn to technology since I was a kid, competing in AMC math competitions and Science Olympiad sparked a love for problem-solving that’s stayed with me ever since. 
+                I come from a family of Somali refugees and grew up helping run my father’s grocery store, where I saw firsthand how much technology could improve everyday systems. 
+                That experience taught me the value of hard work, community, and resourcefulness—principles I now bring to my journey as a software engineer.
+                 I’m passionate about building tools that solve real-world problems and create access for people like my own family.
                 </p>
                 
                 <p className="text-muted-foreground mb-8 leading-relaxed">
-                  When I'm not coding, you'll find me exploring new technologies, 
-                  contributing to open-source projects, or sharing knowledge with 
-                  the developer community.
+                  When I'm not coding, you'll find me reading, playing basketball, or working on my speed cubing.  
+    
                 </p>
                 
                 <Button className="bg-hero-gradient">
@@ -104,11 +110,11 @@ const Home = () => {
                     </div>
                     <div>
                       <span className="text-sm text-muted-foreground">Backend</span>
-                      <p className="text-foreground">Node.js, Python, PostgreSQL</p>
+                      <p className="text-foreground">Node.js, Express, Python, Django, FastAPI, C++, Java, Spring Boot, PostgreSQL, MongoDB</p>
                     </div>
                     <div>
                       <span className="text-sm text-muted-foreground">Tools</span>
-                      <p className="text-foreground">Git, Docker, AWS, Vercel</p>
+                      <p className="text-foreground">Pandas, NumPy, Scikit-learn, TensorFlow, Git, Docker, AWS, Vercel</p>
                     </div>
                   </div>
                 </CardContent>

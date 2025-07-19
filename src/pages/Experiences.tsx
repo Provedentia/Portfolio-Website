@@ -5,30 +5,30 @@ import { Calendar, MapPin, Building } from "lucide-react";
 const experiences = [
   {
     id: 1,
-    title: "Senior Full-Stack Developer",
-    company: "Tech Innovations Inc.",
-    location: "San Francisco, CA",
-    duration: "2022 - Present",
-    description: "Lead development of scalable web applications using React, Node.js, and cloud technologies. Mentored junior developers and implemented best practices for code quality and performance optimization.",
-    skills: ["React", "Node.js", "TypeScript", "AWS", "PostgreSQL"]
+    title: "AMP Intern",
+    company: "Jane Street",
+    location: "New York, NY",
+    duration: "Jun - Aug 2024",
+    description: "Selected from over 5,000+ applicants for a 5-week intensive program in trading, programming, and math. Solved mathematical challenges with Jane Street traders, IMO math coaches, and university professors. Developed and tested trading strategies using probabilistic models and statistical analysis.",
+    skills: ["Python","Trading", "Mathematics", "Probability", "Statistics"]
   },
   {
     id: 2,
-    title: "Frontend Developer",
-    company: "Digital Solutions Ltd.",
-    location: "New York, NY",
-    duration: "2021 - 2022",
-    description: "Developed responsive user interfaces and improved user experience across multiple client projects. Collaborated with designers and backend developers to deliver high-quality web applications.",
-    skills: ["React", "JavaScript", "CSS", "HTML", "Git"]
+    title: "Software Engineering Intern",
+    company: "Wise Home Healthcare",
+    location: "Minneapolis, MN",
+    duration: "Jun 2025 - Aug 2025",
+    description: "Engineered automated data flows from EVV logs to Pavillio, cutting billing delays by over 70%. Built secure Python scripts to validate and transmit service data into Pavillio's backend systems. Integrated SFTP-based pipelines with Pavillio APIs to eliminate manual entry for visit authorizations. Architected fault-tolerant ETL pipeline for Pavillio, enabling real-time claims across Minnesota.",
+    skills: ["Python", "ETL", "SFTP", "APIs", "Pavillio", "Data Validation"]
   },
   {
     id: 3,
-    title: "Junior Web Developer",
-    company: "StartUp Ventures",
-    location: "Austin, TX",
-    duration: "2020 - 2021",
-    description: "Built and maintained company websites and web applications. Gained experience in full-stack development while working in an agile development environment.",
-    skills: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"]
+    title: "Founder/Software Developer",
+    company: "EcoEats",
+    location: "Shoreview, MN",
+    duration: "Oct 2022 - Now",
+    description: "Developed an AI-powered OS for logistics, integrating ERP, WMS, and TMS data into a single dashboard. Designed FastAPI microservices deployed via Docker, enabling sync of 10K+ SKUs across systems. Implemented AI workflows for invoice matching, predictive reordering, and optimal carrier selection.",
+    skills: ["FastAPI", "Docker", "AI/ML", "ERP", "WMS", "TMS", "Microservices"]
   }
 ];
 
@@ -39,7 +39,7 @@ const Experiences = () => {
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              My <span className="text-gradient">Experience</span>
+              My Experiences
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               A journey through my professional career, highlighting key roles and achievements
@@ -108,7 +108,7 @@ const Experiences = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a 
-                    href="mailto:your.email@example.com"
+                    href="mailto:suhaibaden@u.northwestern.edu"
                     className="inline-flex items-center justify-center px-6 py-3 bg-hero-gradient text-primary-foreground rounded-md font-medium transition-all hover:scale-105"
                   >
                     Get In Touch
