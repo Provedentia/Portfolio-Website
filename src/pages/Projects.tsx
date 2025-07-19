@@ -3,12 +3,54 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Github, Eye } from "lucide-react";
 
-const projects = [
+interface ProjectMedia {
+  type: "image" | "video";
+  url: string;
+}
+
+interface Project {
+  id: number;
+  title: string;
+  description: string;
+  media: ProjectMedia;
+  technologies: string[];
+  liveUrl: string;
+  githubUrl: string;
+  featured: boolean;
+}
+
+const ProjectMedia: React.FC<{ media: ProjectMedia; title: string; className?: string }> = ({ media, title, className }) => {
+  if (media.type === "video") {
+    return (
+      <iframe
+        src={media.url}
+        title={title}
+        className={className}
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      />
+    );
+  }
+  
+  return (
+    <img 
+      src={media.url} 
+      alt={title}
+      className={className}
+    />
+  );
+};
+
+const projects: Project[] = [
   {
     id: 1,
     title: "E-Commerce Platform",
     description: "A full-stack e-commerce solution with React frontend, Node.js backend, and Stripe integration. Features include user authentication, product management, and order processing.",
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop&auto=format",
+    media: {
+      type: "image",
+      url: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop&auto=format"
+    },
     technologies: ["React", "Node.js", "MongoDB", "Stripe", "JWT"],
     liveUrl: "https://example-ecommerce.com",
     githubUrl: "https://github.com/username/ecommerce-platform",
@@ -18,7 +60,10 @@ const projects = [
     id: 2,
     title: "Task Management App",
     description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features built with React and Socket.io.",
-    image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop&auto=format",
+    media: {
+      type: "video",
+      url: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    },
     technologies: ["React", "Socket.io", "Express", "PostgreSQL", "Tailwind"],
     liveUrl: "https://example-tasks.com",
     githubUrl: "https://github.com/username/task-manager",
@@ -28,7 +73,10 @@ const projects = [
     id: 3,
     title: "Weather Dashboard",
     description: "A responsive weather application that provides current weather conditions and forecasts using external APIs. Features location-based weather and interactive charts.",
-    image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&h=400&fit=crop&auto=format",
+    media: {
+      type: "image",
+      url: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&h=400&fit=crop&auto=format"
+    },
     technologies: ["React", "TypeScript", "Chart.js", "OpenWeather API"],
     liveUrl: "https://example-weather.com",
     githubUrl: "https://github.com/username/weather-dashboard",
@@ -38,7 +86,10 @@ const projects = [
     id: 4,
     title: "Portfolio Website",
     description: "A modern, responsive portfolio website built with React and Tailwind CSS. Features smooth animations, dark theme, and optimized performance.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&auto=format",
+    media: {
+      type: "image",
+      url: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&auto=format"
+    },
     technologies: ["React", "Tailwind CSS", "Framer Motion", "Vercel"],
     liveUrl: "https://example-portfolio.com",
     githubUrl: "https://github.com/username/portfolio",
@@ -48,7 +99,10 @@ const projects = [
     id: 5,
     title: "Blog Platform",
     description: "A content management system for bloggers with markdown support, comment system, and SEO optimization. Built with modern web technologies.",
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop&auto=format",
+    media: {
+      type: "image",
+      url: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop&auto=format"
+    },
     technologies: ["Next.js", "MDX", "Prisma", "NextAuth", "Vercel"],
     liveUrl: "https://example-blog.com",
     githubUrl: "https://github.com/username/blog-platform",
@@ -58,7 +112,10 @@ const projects = [
     id: 6,
     title: "Chat Application",
     description: "Real-time chat application with private messaging, group chats, and file sharing capabilities. Features end-to-end encryption and modern UI.",
-    image: "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=600&h=400&fit=crop&auto=format",
+    media: {
+      type: "image",
+      url: "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=600&h=400&fit=crop&auto=format"
+    },
     technologies: ["React", "Socket.io", "Node.js", "MongoDB", "WebRTC"],
     liveUrl: "https://example-chat.com",
     githubUrl: "https://github.com/username/chat-app",
@@ -76,7 +133,7 @@ const Projects = () => {
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              My <span className="text-gradient">Projects</span>
+              My Projects
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               A showcase of my recent work and side projects, demonstrating various technologies and problem-solving approaches
@@ -96,9 +153,9 @@ const Projects = () => {
                   style={{ animationDelay: `${index * 0.2}s` }}
                 >
                   <div className="aspect-video overflow-hidden">
-                    <img 
-                      src={project.image} 
-                      alt={project.title}
+                    <ProjectMedia 
+                      media={project.media}
+                      title={project.title}
                       className="w-full h-full object-cover transition-transform hover:scale-105"
                     />
                   </div>
@@ -159,9 +216,9 @@ const Projects = () => {
                   style={{ animationDelay: `${(index + featuredProjects.length) * 0.1}s` }}
                 >
                   <div className="aspect-video overflow-hidden">
-                    <img 
-                      src={project.image} 
-                      alt={project.title}
+                    <ProjectMedia 
+                      media={project.media}
+                      title={project.title}
                       className="w-full h-full object-cover transition-transform hover:scale-105"
                     />
                   </div>
