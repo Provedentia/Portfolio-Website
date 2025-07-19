@@ -45,86 +45,86 @@ const ProjectMedia: React.FC<{ media: ProjectMedia; title: string; className?: s
 const projects: Project[] = [
   {
     id: 1,
-    title: "E-Commerce Platform",
-    description: "A full-stack e-commerce solution with React frontend, Node.js backend, and Stripe integration. Features include user authentication, product management, and order processing.",
-    media: {
-      type: "image",
-      url: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop&auto=format"
-    },
-    technologies: ["React", "Node.js", "MongoDB", "Stripe", "JWT"],
-    liveUrl: "https://example-ecommerce.com",
-    githubUrl: "https://github.com/username/ecommerce-platform",
-    featured: true
-  },
-  {
-    id: 2,
-    title: "Task Management App",
-    description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features built with React and Socket.io.",
+    title: "Nimbus, an AI-Powered Personal Finance App",
+    description: "Created a budgeting and account aggregation app using PostgreSQL, GROQ, Node.js, and React. Integrated Teller API and WebSockets for real-time transaction syncing and user dashboards. Designed secure RESTful routes and optimized schemas for multi-account financial data queries. Currently working on getting an Apple developer account and final features.",
     media: {
       type: "video",
       url: "https://www.youtube.com/embed/dQw4w9WgXcQ"
     },
-    technologies: ["React", "Socket.io", "Express", "PostgreSQL", "Tailwind"],
-    liveUrl: "https://example-tasks.com",
-    githubUrl: "https://github.com/username/task-manager",
+    technologies: ["JavaScript", "TypeScript", "PostgreSQL", "GROQ", "Node.js", "React", "Teller"],
+    liveUrl: "https://example-finance.com",
+    githubUrl: "https://github.com/username/personal-finance-app",
     featured: true
   },
   {
-    id: 3,
-    title: "Weather Dashboard",
-    description: "A responsive weather application that provides current weather conditions and forecasts using external APIs. Features location-based weather and interactive charts.",
+    id: 2,
+    title: "AI GitHub PR Reviewer",
+    description: "Built a GPT-4 code review bot that posts inline comments on GitHub pull requests using webhooks. Used FastAPI, httpx, and Docker to handle GitHub events and query OpenAI with structured prompts.",
     media: {
       type: "image",
-      url: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&h=400&fit=crop&auto=format"
+      url: "https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=600&h=400&fit=crop&auto=format"
     },
-    technologies: ["React", "TypeScript", "Chart.js", "OpenWeather API"],
-    liveUrl: "https://example-weather.com",
-    githubUrl: "https://github.com/username/weather-dashboard",
+    technologies: ["FastAPI", "Python", "OpenAI API", "GitHub Webhooks", "httpx", "Docker"],
+    liveUrl: "https://example-pr-reviewer.com",
+    githubUrl: "https://github.com/Provedentia/AI-Pull-Request-Reviewer",
+    featured: false
+  },
+  {
+    id: 3,
+    title: "DevLog Radar",
+    description: "Built an AI tool that compiles GitHub and LeetCode activity into intelligent daily developer logs. Used FastAPI and cron jobs to fetch commits and submissions, then tag and group them by category.",
+    media: {
+      type: "image",
+      url: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop&auto=format"
+    },
+    technologies: ["FastAPI", "PostgreSQL", "GitHub API", "LeetCode API", "OpenAI", "Docker"],
+    liveUrl: "https://example-devlog.com",
+    githubUrl: "https://github.com/Provedentia/DevLog-Radar",
     featured: false
   },
   {
     id: 4,
-    title: "Portfolio Website",
-    description: "A modern, responsive portfolio website built with React and Tailwind CSS. Features smooth animations, dark theme, and optimized performance.",
+    title: "Electronic Trading Bot",
+    description: "Created a quantitative trading algorithm to buy and sell commodities against other trading algorithms. Achieved 3rd place out of 50 teams, earning over 10 million dollars in estimated PnL.",
     media: {
       type: "image",
-      url: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&auto=format"
+      url: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&h=400&fit=crop&auto=format"
     },
-    technologies: ["React", "Tailwind CSS", "Framer Motion", "Vercel"],
-    liveUrl: "https://example-portfolio.com",
-    githubUrl: "https://github.com/username/portfolio",
+    technologies: ["Python"],
+    liveUrl: "https://example-trading.com",
+    githubUrl: "https://github.com/Provedentia/Electronic-Trading-Bot",
     featured: false
   },
   {
     id: 5,
-    title: "Blog Platform",
-    description: "A content management system for bloggers with markdown support, comment system, and SEO optimization. Built with modern web technologies.",
+    title: "Wordle, Wordle Ladder Game, and Solver",
+    description: "Built an interactive word puzzle game combining Wordle mechanics with ladder-style progression. Features multi-level challenges and a hint system.",
     media: {
       type: "image",
-      url: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop&auto=format"
+      url: "https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?w=600&h=400&fit=crop&auto=format"
     },
-    technologies: ["Next.js", "MDX", "Prisma", "NextAuth", "Vercel"],
-    liveUrl: "https://example-blog.com",
-    githubUrl: "https://github.com/username/blog-platform",
+    technologies: ["Python"],
+    liveUrl: "https://example-wordle-ladder.com",
+    githubUrl: "https://github.com/Provedentia/Wordle-Ladder",
     featured: false
   },
   {
     id: 6,
-    title: "Chat Application",
-    description: "Real-time chat application with private messaging, group chats, and file sharing capabilities. Features end-to-end encryption and modern UI.",
+    title: "CTA Bus Tracker",
+    description: "Real-time Chicago Transit Authority bus tracking application using the CTA API. Features live bus predictions, route maps, and nearby stop finder with geolocation integration.",
     media: {
       type: "image",
-      url: "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=600&h=400&fit=crop&auto=format"
+      url: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=600&h=400&fit=crop&auto=format"
     },
-    technologies: ["React", "Socket.io", "Node.js", "MongoDB", "WebRTC"],
-    liveUrl: "https://example-chat.com",
-    githubUrl: "https://github.com/username/chat-app",
+    technologies: ["C++"],
+    liveUrl: "https://example-cta-tracker.com",
+    githubUrl: "https://github.com/Provedentia/Bus-Trackerr",
     featured: false
   }
 ];
 
 const Projects = () => {
-  const featuredProjects = projects.filter(project => project.featured);
+  const featuredProject = projects.find(project => project.featured && project.media.type === "video");
   const otherProjects = projects.filter(project => !project.featured);
 
   return (
@@ -140,68 +140,70 @@ const Projects = () => {
             </p>
           </div>
 
-          {/* Featured Projects */}
-          <div className="mb-16">
-            <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-center">
-              Featured Projects
-            </h2>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              {featuredProjects.map((project, index) => (
-                <Card 
-                  key={project.id} 
-                  className={`card-hover bg-card-gradient border-border overflow-hidden animate-fade-in`}
-                  style={{ animationDelay: `${index * 0.2}s` }}
-                >
-                  <div className="aspect-video overflow-hidden">
-                    <ProjectMedia 
-                      media={project.media}
-                      title={project.title}
-                      className="w-full h-full object-cover transition-transform hover:scale-105"
-                    />
+          {/* Featured Project */}
+          {featuredProject && (
+            <div className="mb-16">
+              <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-center">
+                Featured Project
+              </h2>
+              <div className="w-full max-w-none mx-auto" style={{ width: '75vw' }}>
+                <Card className="card-hover bg-card-gradient border-border overflow-hidden animate-fade-in">
+                  <div className="flex flex-col lg:flex-row">
+                    <div className="lg:w-1/2 aspect-video lg:aspect-square">
+                      <ProjectMedia 
+                        media={featuredProject.media}
+                        title={featuredProject.title}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    
+                    <div className="lg:w-1/2 flex flex-col">
+                      <CardHeader>
+                        <CardTitle className="text-2xl md:text-3xl">
+                          {featuredProject.title}
+                        </CardTitle>
+                      </CardHeader>
+                      
+                      <CardContent className="flex-1 flex flex-col justify-between">
+                        <div>
+                          <p className="text-muted-foreground leading-relaxed mb-6 text-lg">
+                            {featuredProject.description}
+                          </p>
+                          
+                          <div className="flex flex-wrap gap-2 mb-6">
+                            {featuredProject.technologies.map((tech) => (
+                              <Badge 
+                                key={tech} 
+                                variant="secondary"
+                                className="bg-accent hover:bg-accent-hover transition-colors"
+                              >
+                                {tech}
+                              </Badge>
+                            ))}
+                          </div>
+                        </div>
+                        
+                        <div className="flex gap-4">
+                          <Button asChild className="bg-hero-gradient flex-1">
+                            <a href={featuredProject.liveUrl} target="_blank" rel="noopener noreferrer">
+                              <Eye className="mr-2" size={16} />
+                              Live Demo
+                            </a>
+                          </Button>
+                          <Button variant="outline" asChild className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                            <a href={featuredProject.githubUrl} target="_blank" rel="noopener noreferrer">
+                              <Github className="mr-2" size={16} />
+                              Code
+                            </a>
+                          </Button>
+                        </div>
+                      </CardContent>
+                    </div>
                   </div>
-                  
-                  <CardHeader>
-                    <CardTitle className="text-xl md:text-2xl">
-                      {project.title}
-                    </CardTitle>
-                  </CardHeader>
-                  
-                  <CardContent>
-                    <p className="text-muted-foreground leading-relaxed mb-6">
-                      {project.description}
-                    </p>
-                    
-                    <div className="flex flex-wrap gap-2 mb-6">
-                      {project.technologies.map((tech) => (
-                        <Badge 
-                          key={tech} 
-                          variant="secondary"
-                          className="bg-accent hover:bg-accent-hover transition-colors"
-                        >
-                          {tech}
-                        </Badge>
-                      ))}
-                    </div>
-                    
-                    <div className="flex gap-4">
-                      <Button asChild className="bg-hero-gradient flex-1">
-                        <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                          <Eye className="mr-2" size={16} />
-                          Live Demo
-                        </a>
-                      </Button>
-                      <Button variant="outline" asChild className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                        <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                          <Github className="mr-2" size={16} />
-                          Code
-                        </a>
-                      </Button>
-                    </div>
-                  </CardContent>
                 </Card>
-              ))}
+              </div>
             </div>
-          </div>
+          )}
 
           {/* Other Projects */}
           <div>
@@ -212,17 +214,9 @@ const Projects = () => {
               {otherProjects.map((project, index) => (
                 <Card 
                   key={project.id} 
-                  className={`card-hover bg-card-gradient border-border overflow-hidden animate-fade-in`}
-                  style={{ animationDelay: `${(index + featuredProjects.length) * 0.1}s` }}
+                  className={`card-hover bg-card-gradient border-border animate-fade-in`}
+                  style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <div className="aspect-video overflow-hidden">
-                    <ProjectMedia 
-                      media={project.media}
-                      title={project.title}
-                      className="w-full h-full object-cover transition-transform hover:scale-105"
-                    />
-                  </div>
-                  
                   <CardHeader>
                     <CardTitle className="text-lg">
                       {project.title}
@@ -251,16 +245,11 @@ const Projects = () => {
                       )}
                     </div>
                     
-                    <div className="flex gap-2">
-                      <Button size="sm" asChild className="bg-hero-gradient flex-1">
-                        <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                          <ExternalLink className="mr-1" size={14} />
-                          Demo
-                        </a>
-                      </Button>
-                      <Button size="sm" variant="outline" asChild className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                    <div className="flex">
+                      <Button size="sm" variant="outline" asChild className="border-primary text-primary hover:bg-primary hover:text-primary-foreground w-full">
                         <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                          <Github size={14} />
+                          <Github className="mr-2" size={14} />
+                          View Code
                         </a>
                       </Button>
                     </div>

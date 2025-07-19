@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Code, Coffee, Rocket, Linkedin } from "lucide-react";
+import { ArrowRight, Code, Coffee, Rocket, Linkedin, Mail, Github, Phone } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div className="min-h-screen pt-20">
       {/* Hero Section */}
-      <section className="py-20 px-6">
+      <section className="py-0 px-6">
         <div className="container mx-auto text-center">
           <div className="animate-float">
             <h1 className="text-5xl md:text-7xl font-bold mb-6">
@@ -35,38 +35,66 @@ const Home = () => {
               asChild
               className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
             >
+              <a href="https://github.com/username" target="_blank" rel="noopener noreferrer">
+                <Github className="mr-2" size={20} />
+                GitHub
+              </a>
+            </Button>
+            <Button 
+              variant="outline" 
+              size="lg" 
+              asChild
+              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+            >
               <a href="https://www.linkedin.com/in/suhaibaden/" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="mr-2" size={20} />
                 Connect on LinkedIn
               </a>
             </Button>
           </div>
-          
-          {/* Stats Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <Card className="card-hover bg-card-gradient border-border">
-              <CardContent className="p-6 text-center">
-                <Code className="w-8 h-8 text-primary mx-auto mb-4" />
-                <h3 className="text-2xl font-bold mb-2">5+</h3>
-                <p className="text-muted-foreground">Projects Completed</p>
-              </CardContent>
-            </Card>
+        </div>
+      </section>
+      {/* Contact Section */}
+      <section className="py-0 px-6">
+        <div className="container mx-auto">
+          <div className="max-w-2xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8">
+              Get In Touch
+            </h2>
+            <p className="text-xl text-muted-foreground mb-12">
+              I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.
+            </p>
             
-            <Card className="card-hover bg-card-gradient border-border">
-              <CardContent className="p-6 text-center">
-                <Coffee className="w-8 h-8 text-primary mx-auto mb-4" />
-                <h3 className="text-2xl font-bold mb-2">2+</h3>
-                <p className="text-muted-foreground">Years Experience</p>
-              </CardContent>
-            </Card>
-            
-            <Card className="card-hover bg-card-gradient border-border">
-              <CardContent className="p-6 text-center">
-                <Rocket className="w-8 h-8 text-primary mx-auto mb-4" />
-                <h3 className="text-2xl font-bold mb-2">10+</h3>
-                <p className="text-muted-foreground">Technologies Mastered</p>
-              </CardContent>
-            </Card>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-4xl mx-auto">
+              <Card className="card-hover bg-card-gradient border-border min-h-[200px]">
+                <CardContent className="p-8 text-center h-full flex flex-col justify-center">
+                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <Mail className="w-8 h-8 text-primary" />
+                  </div>
+                  <h3 className="font-semibold mb-4 text-lg">Email</h3>
+                  <Button variant="link" asChild className="p-0 h-auto text-muted-foreground hover:text-primary text-sm break-all">
+                    <a href="mailto:suhaibaden@u.northwestern.edu">
+                      suhaibaden@u.northwestern.edu
+                    </a>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              <Card className="card-hover bg-card-gradient border-border min-h-[200px]">
+                <CardContent className="p-8 text-center h-full flex flex-col justify-center">
+                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <Phone className="w-8 h-8 text-primary" />
+                  </div>
+                  <h3 className="font-semibold mb-4 text-lg">Phone</h3>
+                  <Button variant="link" asChild className="p-0 h-auto text-muted-foreground hover:text-primary text-sm">
+                    <a href="tel:+16128067488">
+                      (612) 806-7488
+                    </a>
+                  </Button>
+                </CardContent>
+              </Card>
+            </div>
+
           </div>
         </div>
       </section>
@@ -76,7 +104,7 @@ const Home = () => {
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-              About <span className="text-gradient">Me</span>
+              About Me
             </h2>
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -94,10 +122,6 @@ const Home = () => {
     
                 </p>
                 
-                <Button className="bg-hero-gradient">
-                  <ArrowRight className="mr-2" size={18} />
-                  Get In Touch
-                </Button>
               </div>
               
               <Card className="card-hover bg-card-gradient border-border">

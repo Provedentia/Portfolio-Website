@@ -1,14 +1,14 @@
 import { NavLink } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Home, Briefcase, FolderOpen, Github, Linkedin } from "lucide-react";
+import { Home, Briefcase, FolderOpen, Github, Linkedin, FileText} from "lucide-react";
 
 const Navigation = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-card/80 backdrop-blur-lg border-b border-border">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <NavLink to="/" className="text-xl font-bold text-gradient">
-            Portfolio
+          <NavLink to="/" className="text-xl font-bold text-primary">
+            Suhaib Aden
           </NavLink>
           
           <div className="hidden md:flex items-center space-x-8">
@@ -51,13 +51,18 @@ const Navigation = () => {
           
           <div className="flex items-center space-x-4">
             <Button variant="ghost" size="sm" asChild>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/Provedentia" target="_blank" rel="noopener noreferrer">
                 <Github size={18} />
               </a>
             </Button>
             <Button variant="ghost" size="sm" asChild>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/suhaibaden/" target="_blank" rel="noopener noreferrer">
                 <Linkedin size={18} />
+              </a>
+            </Button>
+            <Button variant="ghost" size="sm" asChild>
+              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                <FileText size={18} />
               </a>
             </Button>
           </div>
