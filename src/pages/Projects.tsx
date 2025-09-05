@@ -92,7 +92,7 @@ const projects: Project[] = [
     },
     technologies: ["FastAPI", "Python", "OpenAI API", "GitHub Webhooks", "httpx", "Docker"],
     liveUrl: "https://example-pr-reviewer.com",
-    githubUrl: "https://github.com/Provedentia/AI-Pull-Request-Reviewer",
+    githubUrl: "https://github.com/Provedentia/AI-Pull-Request-Reviewer-",
     featured: false
   },
   {
