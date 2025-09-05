@@ -65,7 +65,7 @@ const projects: Project[] = [
       url: "https://www.youtube.com/embed/FspQ-tqK6ok"
     },
     technologies: ["JavaScript", "TypeScript", "PostgreSQL", "GROQ", "Node.js", "React", "Teller"],
-    liveUrl: "https://www.nimbusai.us",
+    liveUrl: "https://github.com/Provedentia/Nimbus",
     githubUrl: "https://github.com/Provedentia/Nimbus",
     featured: true
   },
@@ -78,7 +78,7 @@ const projects: Project[] = [
       url: "https://cdn.corporatefinanceinstitute.com/assets/stock-charts.png"
     },
     technologies: ["Python"],
-    liveUrl: "https://example-trading.com",
+    liveUrl: "https://github.com/Provedentia/Electronic-Trading-Bot",
     githubUrl: "https://github.com/Provedentia/Electronic-Trading-Bot",
     featured: true
   },
