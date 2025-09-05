@@ -45,7 +45,7 @@ const ProjectMedia: React.FC<{ media: ProjectMedia; title: string; className?: s
 const projects: Project[] = [
   {
     id: 1,
-    title: "Thrivable AI, First Place Winner at KatyHacks 2025",
+    title: "Thrivable AI, 1st Place Winner at KatyYouthHacks 2025",
     description: "Thrivable implements a React.js frontend with Vite bundling and Tailwind CSS, backed by a Node.js/Express server that orchestrates multiple AI services including Groq API for LLaMA 3 inference and Tavily API for dynamic web scraping and data extraction. The platform integrates Google Cloud Vision's Product Search API with a custom OCR fallback system, feeding into a multi-stage data pipeline that processes raw image inputs through computer vision, web crawling, and natural language processing to generate quantified environmental impact scores. The architecture features modular backend design with separated concerns, JWT-based authentication through Supabase, and a sophisticated data normalization system that handles inconsistent environmental data formats from diverse sources across the web.",
     media: {
       type: "video",
@@ -65,7 +65,7 @@ const projects: Project[] = [
       url: "https://www.youtube.com/embed/FspQ-tqK6ok"
     },
     technologies: ["JavaScript", "TypeScript", "PostgreSQL", "GROQ", "Node.js", "React", "Teller"],
-    liveUrl: "https://example-finance.com",
+    liveUrl: "https://www.nimbusai.us",
     githubUrl: "https://github.com/Provedentia/Nimbus",
     featured: true
   },
