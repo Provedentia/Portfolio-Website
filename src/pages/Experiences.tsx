@@ -136,7 +136,7 @@ const Experiences = () => {
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a 
                     href="mailto:suhaibaden@u.northwestern.edu"
-                    className="inline-flex items-center justify-center px-6 py-3 bg-hero-gradient text-primary-foreground rounded-md font-medium transition-all hover:scale-105"
+                    className="inline-flex items-center justify-center px-6 py-3 bg-primary text-primary-foreground rounded-md font-medium transition-all hover:scale-105"
                   >
                     Get In Touch
                   </a>

@@ -17,9 +17,9 @@ All colors MUST be HSL.
     --popover: 222 20% 8%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 217 91% 60%;
-    --primary-foreground: 222 47% 11%;
-    --primary-glow: 217 91% 70%;
+    --primary: 270 60% 70%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 270 50% 75%;
 
     --secondary: 217 32% 17%;
     --secondary-foreground: 210 40% 98%;
@@ -36,17 +36,17 @@ All colors MUST be HSL.
 
     --border: 215 28% 17%;
     --input: 215 28% 17%;
-    --ring: 217 91% 60%;
+    --ring: 270 60% 70%;
 
     /* Portfolio specific colors */
-    --hero-gradient: linear-gradient(135deg, hsl(217 91% 60%), hsl(245 91% 70%));
-    --card-gradient: linear-gradient(135deg, hsl(222 20% 8%), hsl(222 20% 12%));
-    --text-gradient: linear-gradient(135deg, hsl(217 91% 70%), hsl(245 91% 80%));
-    
+    --hero-gradient: hsl(270 60% 70%);
+    --card-gradient: hsl(222 20% 10%);
+    --text-gradient: hsl(270 60% 70%);
+
     /* Shadows */
-    --shadow-primary: 0 20px 40px -12px hsl(217 91% 60% / 0.3);
-    --shadow-card: 0 10px 30px -10px hsl(0 0% 0% / 0.5);
-    --shadow-glow: 0 0 40px hsl(217 91% 60% / 0.4);
+    --shadow-primary: 0 20px 40px -12px hsl(270 60% 70% / 0.15);
+    --shadow-card: 0 10px 30px -10px hsl(0 0% 0% / 0.4);
+    --shadow-glow: 0 0 30px hsl(270 60% 70% / 0.1);
 
     --radius: 0.5rem;
 
@@ -64,7 +64,7 @@ All colors MUST be HSL.
 
     --sidebar-border: 220 13% 91%;
 
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-ring: 0 0% 95%;
   }
 
   .dark {
@@ -102,7 +102,7 @@ All colors MUST be HSL.
     --sidebar-accent: 240 3.7% 15.9%;
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-ring: 0 0% 95%;
   }
 }
 
@@ -117,10 +117,7 @@ All colors MUST be HSL.
 
   /* Gradient text utility */
   .text-gradient {
-    background: var(--text-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--text-gradient);
   }
 
   /* Card hover effects */
@@ -153,7 +150,7 @@ All colors MUST be HSL.
   }
 
   @keyframes glow {
-    from { box-shadow: 0 0 20px hsl(217 91% 60% / 0.3); }
+    from { box-shadow: 0 0 20px hsl(270 60% 70% / 0.05); }
     to { box-shadow: var(--shadow-glow); }
   }
 }

@@ -199,7 +199,7 @@ const Projects = () => {
                             </div>
                             
                             <div className="flex gap-4">
-                              <Button asChild className="bg-hero-gradient flex-1">
+                              <Button asChild className="bg-primary text-primary-foreground flex-1">
                                 <a href={featuredProject.liveUrl} target="_blank" rel="noopener noreferrer">
                                   <Eye className="mr-2" size={16} />
                                   Live Demo
@@ -284,7 +284,7 @@ const Projects = () => {
                 <p className="text-muted-foreground mb-6">
                   I'm always interested in taking on new challenges and working on exciting projects.
                 </p>
-                <Button className="bg-hero-gradient" size="lg">
+                <Button className="bg-primary text-primary-foreground" size="lg">
                   <ExternalLink className="mr-2" size={18} />
                   Let's Work Together
                 </Button>

@@ -23,7 +23,7 @@ const Home = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
             <Button 
               size="lg" 
-              className="bg-hero-gradient animate-glow"
+              className="bg-primary text-primary-foreground animate-glow"
               onClick={() => navigate('/projects')}
             >
               <Code className="mr-2" size={20} />
