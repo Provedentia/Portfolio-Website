@@ -5,10 +5,10 @@ import { Calendar, MapPin, Building } from "lucide-react";
 const experiences = [
   {
     id: 1,
-    title: "Platform Engineering Intern",
+    title: "Incoming Platform Engineering Intern",
     company: "CME Group",
     location: "Chicago, IL",
-    duration: "Jun 2026 - Present",
+    duration: "Jun 2026",
     description: "Incoming Platform Engineering Intern working on distributed systems and CI/CD infrastructure.",
     skills: ["Distributed Systems", "CI/CD", "Platform Engineering"]
   },
