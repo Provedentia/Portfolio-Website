@@ -13,10 +13,10 @@ const Home = () => {
         <div className="container mx-auto text-center">
           <div>
             <h1 className="text-5xl md:text-7xl font-bold mb-6">
-              Suhaib Aden
+              Suhaib <span className="text-gold">Aden</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-              My name is Suhaib and I'm a Sophomore studying Computer Science and Math at Northwestern University. I'm interested in AI, Machine Learning, and Software Engineering and am currently looking for a summer 2026 internship.
+              My name is Suhaib and I'm a Sophomore studying Computer Science and Math at Northwestern University. I'm interested in Machine Learning and Low-level systems and am currently looking for a summer 2027 internship.
             </p>
           </div>
           
@@ -70,7 +70,7 @@ const Home = () => {
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-              About Me
+              About <span className="text-gold">Me</span>
             </h2>
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -92,7 +92,7 @@ const Home = () => {
               
               <Card className="card-hover bg-card-gradient border-border">
                 <CardContent className="p-8">
-                  <h4 className="text-xl font-semibold mb-4">Skills & Technologies</h4>
+                  <h4 className="text-xl font-semibold mb-4">Skills & <span className="text-gold">Technologies</span></h4>
                   <div className="space-y-4">
                     <div>
                       <span className="text-sm text-muted-foreground">Frontend</span>
@@ -119,7 +119,7 @@ const Home = () => {
         <div className="container mx-auto">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
-              Get In Touch
+              Get In <span className="text-gold">Touch</span>
             </h2>
             <p className="text-xl text-muted-foreground mb-12">
               I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.
@@ -128,8 +128,8 @@ const Home = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-4xl mx-auto">
               <Card className="card-hover bg-card-gradient border-border min-h-[200px]">
                 <CardContent className="p-8 text-center h-full flex flex-col justify-center">
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <Mail className="w-8 h-8 text-primary" />
+                  <div className="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <Mail className="w-8 h-8 text-gold" />
                   </div>
                   <h3 className="font-semibold mb-4 text-lg">Email</h3>
                   <Button variant="link" asChild className="p-0 h-auto text-muted-foreground hover:text-primary text-sm break-all">
@@ -142,8 +142,8 @@ const Home = () => {
 
               <Card className="card-hover bg-card-gradient border-border min-h-[200px]">
                 <CardContent className="p-8 text-center h-full flex flex-col justify-center">
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <Phone className="w-8 h-8 text-primary" />
+                  <div className="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <Phone className="w-8 h-8 text-gold" />
                   </div>
                   <h3 className="font-semibold mb-4 text-lg">Phone</h3>
                   <Button variant="link" asChild className="p-0 h-auto text-muted-foreground hover:text-primary text-sm">

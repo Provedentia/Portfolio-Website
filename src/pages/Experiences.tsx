@@ -13,6 +13,15 @@ const experiences = [
     skills: ["Distributed Systems", "CI/CD", "Platform Engineering"]
   },
   {
+    id: 1,
+    title: "Undergraduate Research Assistant - MAGICS Lab",
+    company: "Northwestern University",
+    location: "Chicago, IL",
+    duration: "March 2026 - Present",
+    description: "Researching the application of large language models to financial markets by parsing SEC filings and earnings call transcripts to generate trading signals, while building a model distillation pipeline to compress frontier model reasoning into low-latency inference.",
+    skills: ["Foundation Models", "Model Distillation", "NLP", "Financial Signal Generation", "Quantitative Research"]
+  },
+  {
     id: 2,
     title: "Teaching Assistant - Machine Learning",
     company: "Northwestern University",
