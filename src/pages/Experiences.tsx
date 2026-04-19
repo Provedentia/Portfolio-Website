@@ -13,7 +13,7 @@ const experiences = [
     skills: ["Distributed Systems", "CI/CD", "Platform Engineering"]
   },
   {
-    id: 1,
+    id: 2,
     title: "Undergraduate Research Assistant - MAGICS Lab",
     company: "Northwestern University",
     location: "Chicago, IL",
@@ -22,7 +22,7 @@ const experiences = [
     skills: ["Foundation Models", "Model Distillation", "NLP", "Financial Signal Generation", "Quantitative Research"]
   },
   {
-    id: 2,
+    id: 3,
     title: "Teaching Assistant - Machine Learning",
     company: "Northwestern University",
     location: "Evanston, IL",
@@ -31,7 +31,7 @@ const experiences = [
     skills: ["Machine Learning", "Teaching", "Python"]
   },
   {
-    id: 3,
+    id: 4,
     title: "Machine Learning Intern",
     company: "R&D Venture Studio",
     location: "Remote",
@@ -40,7 +40,7 @@ const experiences = [
     skills: ["PyTorch", "LangChain", "ChromaDB", "AWS Lambda", "Docker", "Celery", "PostgreSQL", "RAG"]
   },
   {
-    id: 4,
+    id: 5,
     title: "Software Engineering Intern",
     company: "Wise Home Healthcare",
     location: "Minneapolis, MN",
@@ -49,7 +49,7 @@ const experiences = [
     skills: ["Python", "ETL", "SFTP", "Redis", "APIs", "Data Validation"]
   },
   {
-    id: 5,
+    id: 6,
     title: "Founder / CEO",
     company: "EcoEats",
     location: "Evanston, IL",
@@ -58,7 +58,7 @@ const experiences = [
     skills: ["Computer Vision", "Machine Learning", "Python", "Time-Series Forecasting", "Inventory Systems"]
   },
   {
-    id: 6,
+    id: 7,
     title: "AMP Intern",
     company: "Jane Street",
     location: "New York, NY",
